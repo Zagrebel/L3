@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(0, "");
+	int op;
+	cout << "[1] Аптекарьный вес: ";
+	cout << " Выберите ";
+	cin >> op;
+	switch (op)
+	{
+	case 1:
+		cout << " Аптекарьский вес: " << endl;
+		cout << "[1] Сажень " << endl;
+		cout << "[2] Дюйм в см " << endl;
+		cout << "[3] Фут " << endl;
+		cout << "[4] Драхма " << endl;
+		cout << "[5]  Унция " << endl;
+		cout << "[6] Фунт " << endl;
+		cout << "[7] Аршин " << endl;
+		cout << "[8] Золотник " << endl;
+		cout << "[9] Дюйм в мм " << endl;
+		cout << " Выберите величину: " << endl;
+		cin >> op;
+
+		switch (op)
+		{
+		case 1:
+			cout << " 1 сажень равна 2б1366 м ";
+			break;
+		case 2:
+			cout << " 1 дюйм равен 2,5 см ";
+			break;
+		case 3:
+			cout << " 1 фут равен 0,3048 м ";
+			break;
+		case 4:
+			cout << " 1 драхма равна 3,7325 г ";
+			break;
+		case 5:
+			cout << " 1 унция равна 29,86 г ";
+			break;
+		case 6:
+			cout << " 1 фунт равен 0,40951 кг ";
+			break;
+		case 7:
+			cout << " 1 аршин равен 0,7112 м ";
+			break;
+		case 8:
+			cout << " 1 золотник равен 4,2657 г ";
+			break;
+		case 9:
+			cout << " 1 дюйм равен 25,3995 мм ";
+			break;
+		}
+	}
+	return 0;
+}
