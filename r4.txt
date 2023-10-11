@@ -1,0 +1,30 @@
+int main()
+{
+	setlocale(0, "");
+	int num;
+	int a = 0;
+	int s = 0;
+	cout << " Введите числа ( 0 конечное ): ";
+	while (true)
+	{
+		cin >> num;
+		if (num == 0)
+		{
+			break;
+		}
+		a++;
+		s += num;
+	}
+	if (a > 0)
+	{
+		double l = static_cast<double>(s) / a;
+		cout << " Количество чисел: " << a << endl;
+		cout << " Сумма чисел: " << s << endl;
+		cout << " Среднее арифметическое: " << l << endl;
+	}
+	else
+	{
+		cout << " Ни одного не было введено " << endl;
+	}
+	return 0;
+}
