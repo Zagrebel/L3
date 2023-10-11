@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(0, "");
+	int i;
+	int num=0;
+	cout << " Высота: ";
+	cin >> num;
+	for (i = 0; i < num; i++)
+	{
+		
+		for (int x=0; x<num-i-1; x++  )
+		{
+			cout << " ";
+		}
+		for (int j=0; j<2*i+1; j++)
+		{
+			cout << "*";
+		}
+		cout << endl;
+	}
+
+	return 0;
+}
